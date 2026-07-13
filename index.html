@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="id">
+  <head> <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lumière Kebaya</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+
+  </head>
+
+  <body>
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h2>Lumière Kebaya</h2>
+        </div>
+
+        <ul class="nav-menu">
+          <li>
+            <a href="#produk"> Produk </a>
+          </li>
+
+          <li>
+            <a href="#deskripsi"> Deskripsi </a>
+          </li>
+
+          <li>
+            <a href="#footer"> Tentang Kami </a>
+          </li>
+
+          <li>
+            <a href="#" id="adminBtn"> Login Admin </a>
+          </li>
+        </ul>
+
+        <div class="nav-right">
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Tulis nama produk..."
+            />
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <div id="cartBtn" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="cart-count"> 0 </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- ========================= -->
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Selamat Datang di Lumière Kebaya</h1>
+
+        <p>
+          Lumière Kebaya menghadirkan koleksi kebaya modern dengan desain
+          elegan, bahan premium, dan pilihan warna pastel yang lembut. Temukan
+          kebaya impianmu untuk wisuda, lamaran, pesta, maupun acara spesial
+          lainnya.
+        </p>
+
+        <a href="#produk">
+          <button>Belanja Sekarang</button>
+        </a>
+      </div>
+
+      <div class="hero-image">
+        <img src="hero.jpeg" alt="Hero Lumière Kebaya" />
+      </div>
+    </section>
+    <!-- ========================= -->
+    <!-- DESKRIPSI TOKO -->
+    <!-- ========================= -->
+
+    <section id="deskripsi" class="deskripsi">
+      <h2>Tentang Lumière Kebaya</h2>
+
+      <p>
+        Lumière Kebaya merupakan butik kebaya modern yang menghadirkan berbagai
+        pilihan kebaya premium dengan desain elegan, kualitas terbaik, dan
+        warna-warna pastel yang cantik. Kami berkomitmen memberikan pengalaman
+        berbelanja yang mudah, nyaman, dan menyenangkan.
+      </p>
+    </section>
+
+    <!-- ========================= -->
+    <!-- KATALOG PRODUK -->
+    <!-- ========================= -->
+
+    <section id="produk" class="produk">
+      <div class="judul-produk">
+        <h2>Katalog Produk</h2>
+
+        <p>Pilih kebaya favoritmu di bawah ini.</p>
+      </div>
+
+      <div class="product-grid">
+        <!-- ========================= -->
+        <!-- PRODUK 1 -->
+        <!-- ========================= -->
+
+        <div class="product-card">
+          <img src="produk1.jpeg" alt="Aurora Pinkys" />
+
+          <h3>Aurora Pinkys</h3>
+
+          <p class="harga">Rp499.000</p>
+
+          <button class="detailBtn" data-id="1">
+    Lihat Deskripsi
+</button>
+
+          <div class="warna">
+            <span class="color pink" data-color="Pink Pastel"></span>
+
+            <span class="color yellow" data-color="Yellow Pastel"></span>
+
+            <span class="color purple active" data-color="Ungu Pastel"></span>
+
+            <span class="color green" data-color="Hijau Pastel"></span>
+          </div>
+
+          <button class="cartButton" data-id="1">
+    Tambah ke Keranjang
+</button>
+
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- PRODUK 2 -->
+        <!-- ========================= -->
+
+        <div class="product-card">
+          <img src="produk2.jpeg" alt="Lavender Grace" />
+
+          <h3>Lavender Grace</h3>
+
+          <p class="harga">Rp500.000</p>
+
+          <button class="detailBtn" data-id="2">
+    Lihat Deskripsi
+</button>
+
+          <div class="warna">
+            <span class="color pink"></span>
+
+            <span class="color yellow"></span>
+
+            <span class="color purple active"></span>
+
+            <span class="color green"></span>
+          </div>
+
+          <button class="cartButton" data-id="2">
+    Tambah ke Keranjang
+</button>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- PRODUK 3 -->
+        <!-- ========================= -->
+
+        <div class="product-card">
+          <img src="produk3.jpeg" alt="Seraphina Lumière" />
+
+          <h3>Seraphina Lumière</h3>
+
+          <p class="harga">Rp500.000</p>
+
+          <button class="detailBtn" data-id="3">
+    Lihat Deskripsi
+</button>
+
+          <div class="warna">
+            <span class="color pink"></span>
+
+            <span class="color yellow"></span>
+
+            <span class="color purple active"></span>
+
+            <span class="color green"></span>
+          </div>
+
+          <button class="cartButton" data-id="3">
+    Tambah ke Keranjang
+</button>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- PRODUK 4 -->
+        <!-- ========================= -->
+
+        <div class="product-card">
+          <img src="produk4.jpeg" alt="Ocean Serenade Top" />
+
+          <h3>Ocean Serenade Top</h3>
+
+          <p class="harga">Rp398.000</p>
+
+          <button class="detailBtn" data-id="4">
+    Lihat Deskripsi
+</button>
+
+          <div class="warna">
+            <span class="color pink"></span>
+
+            <span class="color yellow"></span>
+
+            <span class="color purple active"></span>
+
+            <span class="color green"></span>
+          </div>
+
+          <button class="cartButton" data-id="4">
+    Tambah ke Keranjang
+</button>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- PRODUK 5 -->
+        <!-- ========================= -->
+
+        <div class="product-card">
+          <img src="produk5.jpeg" alt="Lumière Silk" />
+
+          <h3>Lumière Silk</h3>
+
+          <p class="harga">Rp490.000</p>
+
+          <button class="detailBtn" data-id="5">
+    Lihat Deskripsi
+</button>
+
+          <div class="warna">
+            <span class="color pink"></span>
+
+            <span class="color yellow"></span>
+
+            <span class="color purple active"></span>
+
+            <span class="color green"></span>
+          </div>
+
+          <button class="cartButton" data-id="5">
+    Tambah ke Keranjang
+</button>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- PRODUK 6 -->
+        <!-- ========================= -->
+
+        <div class="product-card">
+          <img src="produk6.jpeg" alt="Matcha Strawberry Top" />
+
+          <h3>Matcha Strawberry Top</h3>
+
+          <p class="harga">Rp450.000</p>
+
+          <button class="detailBtn" data-id="6">
+    Lihat Deskripsi
+</button>
+
+          <div class="warna">
+            <span class="color pink"></span>
+
+            <span class="color yellow"></span>
+
+            <span class="color purple active"></span>
+
+            <span class="color green"></span>
+          </div>
+
+          <button class="cartButton" data-id="6">
+    Tambah ke Keranjang
+</button>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- PRODUK 7 -->
+        <!-- ========================= -->
+
+        <div class="product-card">
+          <img src="produk7.jpeg" alt="Evelyn Lace Top" />
+
+          <h3>Evelyn Lace Top</h3>
+
+          <p class="harga">Rp299.000</p>
+
+          <button class="detailBtn" data-id="7">
+    Lihat Deskripsi
+</button>
+
+          <div class="warna">
+            <span class="color pink"></span>
+            <span class="color yellow"></span>
+            <span class="color purple active"></span>
+            <span class="color green"></span>
+          </div>
+
+          <button class="cartButton" data-id="7">
+    Tambah ke Keranjang
+</button>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- PRODUK 8 -->
+        <!-- ========================= -->
+
+        <div class="product-card">
+          <img src="produk8.jpeg" alt="Sakura Songket" />
+
+          <h3>Sakura Songket</h3>
+
+          <p class="harga">Rp300.000</p>
+
+          <button class="detailBtn" data-id="8">
+    Lihat Deskripsi
+</button>
+
+          <div class="warna">
+            <span class="color pink"></span>
+            <span class="color yellow"></span>
+            <span class="color purple active"></span>
+            <span class="color green"></span>
+          </div>
+
+          <button class="cartButton" data-id="8">
+    Tambah ke Keranjang
+</button>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- PRODUK 9 -->
+        <!-- ========================= -->
+
+        <div class="product-card">
+          <img src="produk9.jpeg" alt="Honey Blassom" />
+
+          <h3>Honey Blossom</h3>
+
+          <p class="harga">Rp299.000</p>
+
+          <button class="detailBtn" data-id="9">
+    Lihat Deskripsi
+</button>
+
+          <div class="warna">
+            <span class="color pink"></span>
+            <span class="color yellow"></span>
+            <span class="color purple active"></span>
+            <span class="color green"></span>
+          </div>
+
+          <button class="cartButton" data-id="9">
+    Tambah ke Keranjang
+</button>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- PRODUK 10 -->
+        <!-- ========================= -->
+
+        <div class="product-card">
+          <img src="produk10.jpeg" alt="Syhmpony Lace" />
+
+          <h3>Syhmpony Lace</h3>
+
+          <p class="harga">Rp310.000</p>
+
+          <button class="detailBtn" data-id="10">
+    Lihat Deskripsi
+</button>
+
+          <div class="warna">
+            <span class="color pink"></span>
+            <span class="color yellow"></span>
+            <span class="color purple active"></span>
+            <span class="color green"></span>
+          </div>
+
+          <button class="cartButton" data-id="10">
+    Tambah ke Keranjang
+</button>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- PRODUK 11 -->
+        <!-- ========================= -->
+
+        <div class="product-card">
+          <img src="produk11.jpeg" alt="Camellia Songket" />
+
+          <h3>Camellia Songket</h3>
+
+          <p class="harga">Rp289.000</p>
+
+          <button class="detailBtn" data-id="11">
+    Lihat Deskripsi
+</button>
+
+          <div class="warna">
+            <span class="color pink"></span>
+            <span class="color yellow"></span>
+            <span class="color purple active"></span>
+            <span class="collor green"></span>
+          </div>
+
+          <button class="cartButton" data-id="11">
+    Tambah ke Keranjang
+</button>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- PRODUK 12 -->
+        <!-- ========================= -->
+
+        <div class="product-card">
+          <img src="produk12.jpeg" alt="Ocean Springkle" />
+
+          <h3>Ocean Springkle</h3>
+
+          <p class="harga">Rp278.000</p>
+
+          <button class="detailBtn" data-id="12">
+    Lihat Deskripsi
+</button>
+
+          <div class="warna">
+            <span class="color pink"></span>
+            <span class="color yellow"></span>
+            <span class="color purple active"></span>
+            <span class="color green"></span>
+          </div>
+
+          <button class="cartButton" data-id="12">
+    Tambah ke Keranjang
+</button>
+
+      </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- MODAL DESKRIPSI PRODUK -->
+    <!-- ========================= -->
+
+    <div class="modal" id="productModal">
+
+        <div class="modal-content">
+
+            <span class="close" id="closeProductModal">&times;</span>
+
+            <img id="modalImage" src="images/produk1.jpg" alt="Produk">
+
+            <h2 id="modalTitle">Nama Produk</h2>
+
+            <h3 id="modalPrice">Rp0</h3>
+
+            <p id="modalDescription">
+
+                Deskripsi produk akan muncul di sini.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- SIDEBAR KERANJANG -->
+    <!-- ========================= -->
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+
+            <h2>Keranjang Belanja</h2>
+
+            <button id="closeCart">
+
+                &times;
+
+            </button>
+
+        </div>
+
+        <div id="cartItems">
+
+            <p>
+
+                Keranjang masih kosong.
+
+            </p>
+
+        </div>
+
+        <div class="cart-footer">
+
+            <h3>
+
+                Total :
+
+            </h3>
+
+            <h2 id="cartTotal">
+
+                Rp0
+
+            </h2>
+
+            <button id="resetCart">
+
+                Reset Keranjang
+
+            </button>
+
+            <button id="checkoutBtn">
+
+                Beli Sekarang
+
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- ========================= -->
+    <!-- CHECKOUT -->
+    <!-- ========================= -->
+
+    <div class="modal" id="checkoutModal">
+
+        <div class="modal-content">
+
+            <span class="close" id="closeCheckout">
+
+                &times;
+
+            </span>
+
+            <h2>Checkout</h2>
+
+            <input
+                type="text"
+                id="nama"
+                placeholder="Nama Penerima">
+
+            <textarea
+                id="alamat"
+                placeholder="Alamat Lengkap"></textarea>
+
+            <input
+                type="text"
+                id="telepon"
+                placeholder="No Handphone">
+
+            <label class="pengiriman-label">🚚 Metode Pengiriman</label>
+
+            <select id="shippingMethod" class="shipping-select">
+                <option value="">Pilih Pengiriman</option>
+                <option value="JNE" data-cost="10.000">JNE - Rp10.000</option>
+                <option value="J&amp;T Express" data-cost="15000">J&amp;T Express - Rp20.000</option>
+                <option value="SiCepat" data-cost="11000">SiCepat - Rp14.000</option>
+                <option value="AnterAja" data-cost="9000">AnterAja - Rp10.000</option>
+            </select>
+
+            <button id="lanjutBayar">
+
+                Lanjutkan Pembayaran
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- PEMBAYARAN -->
+    <!-- ========================= -->
+
+<div class="modal" id="paymentModal">
+
+    <div class="modal-content payment-modal">
+
+        <span class="close" id="closePayment">&times;</span>
+
+        <h2>Pilih Metode Pembayaran</h2>
+
+        <div class="payment-list">
+
+            <div class="payment-card paymentOption" data-payment="cod">
+                <h3>💵 Tunai / COD</h3>
+                <p>Bayar di tempat</p>
+            </div>
+
+            <div class="payment-card paymentOption" data-payment="qris">
+                <h3>📱 QRIS</h3>
+                <p>Scan QR Code</p>
+            </div>
+
+            <div class="payment-card paymentOption" data-payment="dana">
+                <h3>💙 DANA</h3>
+                <p>E-Wallet</p>
+            </div>
+
+            <div class="payment-card paymentOption" data-payment="shopeepay">
+                <h3>🛍 ShopeePay</h3>
+                <p>E-Wallet</p>
+            </div>
+
+            <div class="payment-card paymentOption" data-payment="bni">
+                <h3>🏦 BNI</h3>
+                <p>Transfer Bank</p>
+            </div>
+
+            <div class="payment-card paymentOption" data-payment="seabank">
+                <h3>🏦 SeaBank</h3>
+                <p>Transfer Bank</p>
+            </div>
+
+        </div>
+
+        <div class="payment-total">
+            <span>Total Pembayaran</span>
+            <h2 id="paymentTotal">Rp0</h2>
+        </div>
+
+        <div id="paymentInfo"></div>
+        
+        <button id="payNowBtn">
+            🔒 Lanjut Pembayaran
+        </button>
+
+    </div>
+
+</div>
+
+    <!-- ========================= -->
+    <!-- INVOICE PESANAN -->
+    <!-- ========================= -->
+
+    <div class="modal" id="invoiceModal">
+
+        <div class="modal-content invoice-modal">
+
+            <span class="close" id="closeInvoice">&times;</span>
+
+            <div class="invoice-header">
+                <span class="invoice-logo">👗</span>
+                <h2>Lumière Kebaya</h2>
+            </div>
+
+            <p class="invoice-subtitle">Invoice Pesanan</p>
+
+            <hr class="dashed">
+
+            <div class="invoice-row"><span>No Pesanan</span><strong id="invNomor">-</strong></div>
+            <div class="invoice-row"><span>Tanggal</span><strong id="invTanggal">-</strong></div>
+
+            <hr class="dashed">
+
+            <div class="invoice-row"><span>Nama</span><strong id="invNama">-</strong></div>
+            <div class="invoice-row"><span>No WhatsApp</span><strong id="invWA">-</strong></div>
+            <div class="invoice-row"><span>Alamat</span><strong id="invAlamat">-</strong></div>
+            <div class="invoice-row"><span>Pengiriman</span><strong id="invPengiriman">-</strong></div>
+            <div class="invoice-row"><span>Pembayaran</span><strong id="invPembayaran">-</strong></div>
+
+            <hr class="dashed">
+
+            <button id="lihatDaftarPesanan" class="invoice-link-btn">Daftar Pesanan</button>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- DAFTAR PESANAN -->
+    <!-- ========================= -->
+
+    <div class="modal" id="orderListModal">
+
+        <div class="modal-content invoice-modal">
+
+            <span class="close" id="closeOrderList">&times;</span>
+
+            <h2 class="daftar-title">👗 Daftar Pesanan</h2>
+
+            <div id="orderListItems"></div>
+
+            <hr class="dashed">
+
+            <div class="invoice-row"><span>Subtotal</span><strong id="invSubtotal">Rp0</strong></div>
+            <div class="invoice-row"><span>Ongkir</span><strong id="invOngkir">Rp0</strong></div>
+            <div class="invoice-row total-row"><span>Total</span><strong id="invGrandTotal">Rp0</strong></div>
+
+            <div class="order-success">
+                <p>✅ Pesanan Berhasil</p>
+                <p>Terima kasih telah berbelanja di <strong>Lumière Kebaya</strong> ❤️</p>
+            </div>
+
+            <button id="cetakInvoiceBtn" class="print-btn">📤 Cetak Invoice</button>
+            <button id="kembaliBerandaBtn" class="home-btn">🔙 Kembali ke Beranda</button>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- LOGIN ADMIN -->
+    <!-- ========================= -->
+
+    <div class="modal" id="adminModal">
+
+        <div class="modal-content">
+
+            <span class="close" id="closeAdmin">
+
+                &times;
+
+            </span>
+
+            <h2>
+
+                Login Admin
+
+            </h2>
+
+            <input
+                type="text"
+                id="adminName"
+                placeholder="Nama">
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Kode">
+
+            <p class="admin-hint">
+                🔑 Demo Login — Nama: <strong>admin</strong> | Kode: <strong>admin123</strong>
+            </p>
+
+            <button id="loginButton">
+
+                Masuk Dashboard
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- DASHBOARD ADMIN -->
+    <!-- ========================= -->
+
+    <div class="modal" id="adminDashboardModal">
+
+        <div class="modal-content admin-dashboard">
+
+            <span class="close" id="closeAdminDashboard">&times;</span>
+
+            <h2 class="admin-dashboard-title">🛠️ Dashboard Admin</h2>
+
+            <p class="admin-welcome" id="adminWelcomeText">Halo, Admin!</p>
+
+            <div id="adminProductList"></div>
+
+            <button id="adminLogoutBtn" class="home-btn">🚪 Logout</button>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <h2>
+
+                Hubungi Kami
+
+            </h2>
+
+            <p>
+
+                📧
+
+                <a href="mailto:atyanabilaa@gmail.com">
+
+                    atyanabilaa@gmail.com
+
+                </a>
+
+            </p>
+
+            <p>
+
+                📱
+
+                <a href="https://wa.me/6283827196763"
+                    target="_blank">
+
+                    083827196763
+
+                </a>
+
+            </p>
+
+              <p>
+    <i class="fa-brands fa-instagram"></i>
+
+    <a href="https://instagram.com/atyanabilaa"
+       target="_blank">
+        @atyanabilaa
+    </a>
+</p>
+
+                © 2026 Lumière Kebaya
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
